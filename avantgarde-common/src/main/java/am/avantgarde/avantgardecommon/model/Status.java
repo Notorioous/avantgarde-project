@@ -1,6 +1,15 @@
 package am.avantgarde.avantgardecommon.model;
 
-public enum  Status {
+public enum Status {
 
-    BRAND_NEW, USED
+    BRAND_NEW("Brand New"),
+    USED("Used");
+
+    public final String label;
+
+    Status(String label) {
+        this.label = label;
+    }
+
+
 }

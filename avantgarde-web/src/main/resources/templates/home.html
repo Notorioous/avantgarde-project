@@ -64,139 +64,7 @@
 </div>
 <!-- End Switcher -->
 
-<header class="b-topBar wow slideInDown" data-wow-delay="0.7s">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-xs-6">
-                <div class="b-topBar__addr">
-                    <span class="fa fa-map-marker"></span>
-                    202 W 7TH ST, LOS ANGELES, CA 90014
-                </div>
-            </div>
-            <div class="col-md-2 col-xs-6">
-                <div class="b-topBar__tel">
-                    <span class="fa fa-phone"></span>
-                    1-800- 624-5462
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-6">
-                <nav class="b-topBar__nav">
-                    <ul>
-                        <li><a href="#">Cart</a></li>
-                        <li><a href="/register">Register</a></li>
-                        <li th:if="${user == null}"><a href="/login">Sign in</a></li>
-                        <li th:if="${user != null}"><a href="/account">Account</a></li>
-
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-md-2 col-xs-6">
-                <div class="b-topBar__lang">
-                    <div class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle='dropdown'>Language</a>
-                        <a class="m-langLink dropdown-toggle" data-toggle='dropdown' href="#"><span
-                                class="b-topBar__lang-flag m-en"></span>EN<span class="fa fa-caret-down"></span></a>
-                        <ul class="dropdown-menu h-lang">
-                            <li><a class="m-langLink dropdown-toggle" href="/home.html"><span
-                                    class="b-topBar__lang-flag m-en"></span>EN</a></li>
-                            <li><a class="m-langLink dropdown-toggle" href="/home.html"><span
-                                    class="b-topBar__lang-flag m-es"></span>ES</a></li>
-                            <li><a class="m-langLink dropdown-toggle" href="/home.html"><span
-                                    class="b-topBar__lang-flag m-de"></span>DE</a></li>
-                            <li><a class="m-langLink dropdown-toggle" href="/home.html"><span
-                                    class="b-topBar__lang-flag m-fr"></span>FR</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header><!--b-topBar-->
-
-<nav class="b-nav">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3 col-xs-4">
-                <div class="b-nav__logo wow slideInLeft" data-wow-delay="0.3s">
-                    <h3><a href="/slider">AVANT<span>GARDE</span></a></h3>
-                    <h2><a href="/slider">SHOWROOM</a></h2>
-                </div>
-            </div>
-            <div class="col-sm-9 col-xs-8">
-                <div class="b-nav__list wow slideInRight" data-wow-delay="0.3s">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse navbar-main-slide" id="nav">
-                        <ul class="navbar-nav-menu">
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle='dropdown' href="home.html">Home <span
-                                        class="fa fa-caret-down"></span></a>
-                                <ul class="dropdown-menu h-nav">
-                                    <li><a href="/home.html">Home Page 1</a></li>
-                                    <li><a href="/home.html">Home Page 2</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle='dropdown' href="#">Grid <span
-                                        class="fa fa-caret-down"></span></a>
-                                <ul class="dropdown-menu h-nav">
-                                    <li>
-                                        <a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/listings.html">listing
-                                            1</a></li>
-                                    <li>
-                                        <a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/listingsTwo.html">listing
-                                            2</a></li>
-                                    <li>
-                                        <a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/listTable.html">listing
-                                            3</a></li>
-                                    <li>
-                                        <a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/listTableTwo.html">listing
-                                            4</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/compare.html">compare</a>
-                            </li>
-                            <li>
-                                <a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/about.html">About</a>
-                            </li>
-                            <li>
-                                <a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/article.html">Services</a>
-                            </li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle='dropdown' href="#">Blog <span
-                                        class="fa fa-caret-down"></span></a>
-                                <ul class="dropdown-menu h-nav">
-                                    <li>
-                                        <a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/blog.html">Blog
-                                            1</a></li>
-                                    <li>
-                                        <a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/blogTwo.html">Blog
-                                            2</a></li>
-                                    <li>
-                                        <a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/404.html">Page
-                                            404</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/submit1.html">Shop</a>
-                            </li>
-                            <li>
-                                <a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/contacts.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</nav><!--b-nav-->
+<div th:insert="~{header :: header}"></div>
 
 <section class="b-slider" >
     <div id="carousel" class="slide carousel carousel-fade">
@@ -241,9 +109,9 @@
         <div id="carousel-small" class="owl-carousel enable-owl-carousel" data-items="6" data-navigation="true"
              data-auto-play="true" data-stop-on-hover="true" data-items-desktop="6" data-items-desktop-small="4"
              data-items-tablet="3" data-items-tablet-small="2">
-            <div th:each="brand : ${brands}">
+            <div th:each="brand : ${brandList}">
                 <div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
-                    <a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/detail.html">
+                    <a th:href="@{/brands(id=${brand.id})}">
                         <img th:src="@{/getBrandImage(picUrl=${brand.picUrl})}" width="150" height="150">
                     </a>
                     <div class="clearfix"></div>
@@ -269,8 +137,11 @@
             <div th:each="car : ${top10cars}">
                 <div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
                     <a th:href="@{/getCarDetails(id=${car.id})}">
-                        <img th:src="@{/getCarMainImage(picUrl=${car.picUrl})}" width="250" height="165" >
+                        <img th:src="@{/getCarMainImage(picUrl=${car.picUrl})}" width="250" height="165">
+                       <!--/*@thymesVar id="contains" type=""*/-->
+                       <div th:if="${car.price.length()>7}">
                         <span class="m-premium">Premium</span>
+                       </div>
                     </a>
                     <div class="b-featured__item-price" th:text="${car.price}">
 
@@ -282,9 +153,9 @@
                     <div class="b-featured__item-links">
                         <a href="#">New</a>
                         <a href="#"><span th:text="${car.year}"></span></a>
-                        <a href="#"><span th:text="${car.transmission}"></span></a>
+                        <a href="#"><span th:text="${car.transmission.label}"></span></a>
                         <a href="#"><span th:text="${car.color}"></span></a>
-                        <a href="#"><span th:text="${car.fuelType}"></span></a>
+                        <a href="#"><span th:text="${car.status.label}"></span></a>
                     </div>
                 </div>
             </div>

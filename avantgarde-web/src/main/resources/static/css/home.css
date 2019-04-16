@@ -122,17 +122,14 @@ a.m-langLink{
     background: url(../images/flags/en.jpeg);
 }
 
-.b-topBar__lang-flag.m-es{
-    background: url(../images/flags/es.jpeg);
+.b-topBar__lang-flag.m-am{
+    background: url(../images/flags/am.jpg);
 }
 
-.b-topBar__lang-flag.m-de{
-    background: url(../images/flags/de.jpeg);
+.b-topBar__lang-flag.m-ru{
+    background: url(../images/flags/ru.jpg);
 }
 
-.b-topBar__lang-flag.m-fr{
-    background: url(../images/flags/fr.jpeg);
-}
 
 .dropdown-menu{
 	min-width: 100px;
@@ -149,12 +146,12 @@ a.m-langLink{
 	z-index: 99;
 }
 
-.b-nav__logo{
-    float:left;
-    padding: 8px 0 0 5px;
-    background: url(../images/logo/logo.png) left top no-repeat;
-    text-transform: uppercase;
-}
+/*.b-nav__logo{*/
+    /*float:left;*/
+    /*padding: 8px 0 0 5px;*/
+    /*background: url(../images/logo/logo.png) left top no-repeat;*/
+    /*text-transform: uppercase;*/
+/*}*/
 
 .b-nav__logo h3{
     margin:0;

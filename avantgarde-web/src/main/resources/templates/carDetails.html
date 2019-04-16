@@ -61,169 +61,15 @@
 </div>
 <!-- End Switcher -->
 
-<header class="b-topBar wow slideInDown" data-wow-delay="0.7s">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-xs-6">
-				<div class="b-topBar__addr">
-					<span class="fa fa-map-marker"></span>
-					202 W 7TH ST, LOS ANGELES, CA 90014
-				</div>
-			</div>
-			<div class="col-md-2 col-xs-6">
-				<div class="b-topBar__tel">
-					<span class="fa fa-phone"></span>
-					1-800- 624-5462
-				</div>
-			</div>
-			<div class="col-md-4 col-xs-6">
-				<nav class="b-topBar__nav">
-					<ul>
-						<li><a href="#">Cart</a></li>
-						<li><a href="/register">Register</a></li>
-						<li th:if="${user == null}"><a href="/login">Sign in</a></li>
-						<li th:if="${user != null}"><a href="/account">Account</a></li>
+<div th:insert="~{header :: header}"></div>
 
-					</ul>
-				</nav>
-			</div>
-			<div class="col-md-2 col-xs-6">
-				<div class="b-topBar__lang">
-					<div class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle='dropdown'>Language</a>
-						<a class="m-langLink dropdown-toggle" data-toggle='dropdown' href="#"><span
-								class="b-topBar__lang-flag m-en"></span>EN<span class="fa fa-caret-down"></span></a>
-						<ul class="dropdown-menu h-lang">
-							<li><a class="m-langLink dropdown-toggle" href="/home.html"><span
-									class="b-topBar__lang-flag m-en"></span>EN</a></li>
-							<li><a class="m-langLink dropdown-toggle" href="/home.html"><span
-									class="b-topBar__lang-flag m-es"></span>ES</a></li>
-							<li><a class="m-langLink dropdown-toggle" href="/home.html"><span
-									class="b-topBar__lang-flag m-de"></span>DE</a></li>
-							<li><a class="m-langLink dropdown-toggle" href="/home.html"><span
-									class="b-topBar__lang-flag m-fr"></span>FR</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</header><!--b-topBar-->
-
-<nav class="b-nav">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-3 col-xs-4">
-				<div class="b-nav__logo wow slideInLeft" data-wow-delay="0.3s">
-					<h3><a href="/">AVANT<span>GARDE</span></a></h3>
-					<h2><a href="/">SHOWROOM</a></h2>
-				</div>
-			</div>
-			<div class="col-sm-9 col-xs-8">
-				<div class="b-nav__list wow slideInRight" data-wow-delay="0.3s">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
-					<div class="collapse navbar-collapse navbar-main-slide" id="nav">
-						<ul class="navbar-nav-menu">
-							<li class="dropdown">
-								<a class="dropdown-toggle" data-toggle='dropdown' href="home.html">Home <span
-										class="fa fa-caret-down"></span></a>
-								<ul class="dropdown-menu h-nav">
-									<li><a href="/home.html">Home Page 1</a></li>
-									<li><a href="/home.html">Home Page 2</a></li>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a class="dropdown-toggle" data-toggle='dropdown' href="#">Grid <span
-										class="fa fa-caret-down"></span></a>
-								<ul class="dropdown-menu h-nav">
-									<li>
-										<a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/listings.html">listing
-											1</a></li>
-									<li>
-										<a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/listingsTwo.html">listing
-											2</a></li>
-									<li>
-										<a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/listTable.html">listing
-											3</a></li>
-									<li>
-										<a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/listTableTwo.html">listing
-											4</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/compare.html">compare</a>
-							</li>
-							<li>
-								<a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/about.html">About</a>
-							</li>
-							<li>
-								<a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/article.html">Services</a>
-							</li>
-							<li class="dropdown">
-								<a class="dropdown-toggle" data-toggle='dropdown' href="#">Blog <span
-										class="fa fa-caret-down"></span></a>
-								<ul class="dropdown-menu h-nav">
-									<li>
-										<a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/blog.html">Blog
-											1</a></li>
-									<li>
-										<a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/blogTwo.html">Blog
-											2</a></li>
-									<li>
-										<a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/404.html">Page
-											404</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/submit1.html">Shop</a>
-							</li>
-							<li>
-								<a href="../../../../../../../../Downloaded%20Web%20Sites/Новая%20папка/templines.rocks/html/sokolcov/auto-club/contacts.html">Contact</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</nav><!--b-nav-->
+</div>
 
 		<section class="b-pageHeader">
 			<div class="container">
 				<h1 class="wow zoomInLeft" data-wow-delay="0.5s">Vehicle Details Page</h1>
 			</div>
 		</section><!--b-pageHeader-->
-
-		<div class="b-breadCumbs s-shadow wow zoomInUp" data-wow-delay="0.5s">
-			<div class="container">
-				<a href="home.html" class="b-breadCumbs__page">Home</a><span class="fa fa-angle-right"></span><a href="listings.html" class="b-breadCumbs__page">Luxury Cars</a><span class="fa fa-angle-right"></span><a href="listingsTwo.html" class="b-breadCumbs__page">Nissan</a><span class="fa fa-angle-right"></span><a href="detail.html" class="b-breadCumbs__page m-active">Nissan Maxima</a>
-			</div>
-		</div><!--b-breadCumbs-->
-
-		<div class="b-infoBar">
-			<div class="container">
-				<div class="row wow zoomInUp" data-wow-delay="0.5s">
-					<div class="col-xs-3">
-						<div class="b-infoBar__premium">Premium Listing</div>
-					</div>
-					<div class="col-xs-9">
-						<div class="b-infoBar__btns">
-							<a href="#" class="btn m-btn m-infoBtn">SHARE THIS VEHICLE<span class="fa fa-angle-right"></span></a>
-							<a href="#" class="btn m-btn m-infoBtn">ADD TO FAVOURITES<span class="fa fa-angle-right"></span></a>
-							<a href="#" class="btn m-btn m-infoBtn">PRINT THIS PAGE<span class="fa fa-angle-right"></span></a>
-							<a href="#" class="btn m-btn m-infoBtn">DOWNLOAD MANUAL<span class="fa fa-angle-right"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--b-infoBar-->
 
 		<section class="b-detail s-shadow">
 			<div class="container">
@@ -252,7 +98,7 @@
 										<div class="col-xs-10">
 											<ul class="b-detail__main-info-images-big bxslider enable-bx-slider"  data-pager-custom="#bx-pager" data-mode="horizontal" data-pager-slide="true" data-mode-pager="vertical" data-pager-qty="5">
 												<li class="s-relative" th:each="carImage : ${carImages}">
-													<a data-toggle="modal" data-target="#myModal" href="#" class="b-items__cars-one-img-video"><span class="fa fa-film"></span>VIDEO</a>
+													<!--<a data-toggle="modal" data-target="#myModal" href="#" class="b-items__cars-one-img-video"><span class="fa fa-film"></span>VIDEO</a>-->
 													<img class="img-responsive center-block" th:src="@{/getCarImages(carImages=${carImage.picUrl})}" width="620" height="485">
 												</li>
 											</ul>
@@ -333,59 +179,13 @@
 								</div>
 								<div class="b-detail__main-info-text wow zoomInUp" data-wow-delay="0.5s">
 									<div class="b-detail__main-aside-about-form-links">
-										<a href="#" class="j-tab m-active s-lineDownCenter" data-to='#info1'>GENERAL INQUIRY</a>
-										<a href="#" class="j-tab" data-to='#info2'>SCHEDULE TEST DRIVE</a>
-										<a href="#" class="j-tab" data-to='#info3'>GENERAL INQUIRY</a>
-										<a href="#" class="j-tab" data-to='#info4'>SCHEDULE TEST DRIVE</a>
+										<a href="#" class="j-tab m-active s-lineDownCenter" data-to='#info1'>THE HISTORY</a>
+										<!--<a href="#" class="j-tab" data-to='#info2'>SCHEDULE TEST DRIVE</a>-->
+										<!--<a href="#" class="j-tab" data-to='#info3'>GENERAL INQUIRY</a>-->
+										<!--<a href="#" class="j-tab" data-to='#info4'>SCHEDULE TEST DRIVE</a>-->
 									</div>
 									<div id="info1">
-										<p>The 2016 Nissan Maxima is powered by a 3.5-liter V6 engine with 300 horsepower, 10 more than the engine in the outgoing
-											model. A continuously variable transmission and front-wheel drive are standard in all models. Nissan expects the 2016 Maxima
-											to return 22/30 mpg city/highway, which is an improvement over the previous model's EPA-estimated 19/26 mpg.</p>
-										<p>
-											The 2016 Nissan Maxima seats five and comes with a power-adjustable driver,seat, an eight-speaker audio system, Bluetooth,
-											satellite radio, HD Radio, push-button start, a rearview camera, two USB ports, the NissanConnect infotainment system,
-											navigation, an 8-inch color display screen and voice controls for phone, audio and navigation functions. Leather upholstery,
-											heated and ventilated front seats, an 11-speaker Bose audio system, a 360-degree parking camera system, adaptive cruise
-											control, blind spot warning, rear cross traffic alert, front and rear parking sensors and forward collision warning with automatic
-											braking are available. The 2016 Nissan Maxima starts at $33,235 including destination fees.</p>
-										<p>The full review of the 2016 Nissan Maxima is coming soon. In the meantime, you can see pictures, research prices or view and
-											compare specs for the 2016 Nissan Maxima. If you, considering the 2014 Nissan Maxima, you can read our review.</p>
-										<p>Vestibulum auctor lacinia nunc. Nunc ut turpis.Sed libero magna, fermentum viverra, egestas non, fermentum sed, elit. Aenean
-											erat orci, mollis quis gravida sed, mollis a, quam. Integer fermentum neque egestas orci. Nunc posuere, felis sit amet faucibus
-											convallis tortor enim viverra quam, hendrerit interdum dui quam ut lacus. Donec quis quam in ante condimentum blan erdit.
-											Integer et urna. Vestibulum nisl. Ut ante est, imperdiet dignissim eleifend sit amet lacinia tempor justo. Nunc ornare atm nibh.
-											Fusce ut felis. </p>
-										<p>Donec ullamcorper nisi ac lectus. Proin at orci. Suspendisse nec orci nec elit convallis porttitor. Praesent sit amet turpis eu nisl
-											faucibus pharetra. Sed eu felis. Etiam eleifend nisl nec lectus. Ut suscipit pede eu diam. Aenean vitae quam. Cras felis. Sed utdw
-											nibh. Duis libero. Vivamus pharetra libero non facilisis imperdiet mi augue feugiat nisl.</p>
-									</div>
-									<div id="info2">
-										<p>The full review of the 2016 Nissan Maxima is coming soon. In the meantime, you can see pictures, research prices or view and
-											compare specs for the 2016 Nissan Maxima. If you‚considering the 2014 Nissan Maxima, you can read our review.</p>
-										<p>Vestibulum auctor lacinia nunc. Nunc ut turpis.Sed libero magna, fermentum viverra, egestas non, fermentum sed, elit. Aenean
-											erat orci, mollis quis gravida sed, mollis a, quam. Integer fermentum neque egestas orci. Nunc posuere, felis sit amet faucibus
-											convallis tortor enim viverra quam, hendrerit interdum dui quam ut lacus. Donec quis quam in ante condimentum blan erdit.
-											Integer et urna. Vestibulum nisl. Ut ante est, imperdiet dignissim eleifend sit amet lacinia tempor justo. Nunc ornare atm nibh.
-											Fusce ut felis. </p>
-										<p>Donec ullamcorper nisi ac lectus. Proin at orci. Suspendisse nec orci nec elit convallis porttitor. Praesent sit amet turpis eu nisl
-											faucibus pharetra. Sed eu felis. Etiam eleifend nisl nec lectus. Ut suscipit pede eu diam. Aenean vitae quam. Cras felis. Sed utdw
-											nibh. Duis libero. Vivamus pharetra libero non facilisis imperdiet mi augue feugiat nisl.</p>
-									</div>
-									<div id="info3">
-										<p>Vestibulum auctor lacinia nunc. Nunc ut turpis.Sed libero magna, fermentum viverra, egestas non, fermentum sed, elit. Aenean
-											erat orci, mollis quis gravida sed, mollis a, quam. Integer fermentum neque egestas orci. Nunc posuere, felis sit amet faucibus
-											convallis tortor enim viverra quam, hendrerit interdum dui quam ut lacus. Donec quis quam in ante condimentum blan erdit.
-											Integer et urna. Vestibulum nisl. Ut ante est, imperdiet dignissim eleifend sit amet lacinia tempor justo. Nunc ornare atm nibh.
-											Fusce ut felis. </p>
-										<p>Donec ullamcorper nisi ac lectus. Proin at orci. Suspendisse nec orci nec elit convallis porttitor. Praesent sit amet turpis eu nisl
-											faucibus pharetra. Sed eu felis. Etiam eleifend nisl nec lectus. Ut suscipit pede eu diam. Aenean vitae quam. Cras felis. Sed utdw
-											nibh. Duis libero. Vivamus pharetra libero non facilisis imperdiet mi augue feugiat nisl.</p>
-									</div>
-									<div id="info4">
-										<p>Donec ullamcorper nisi ac lectus. Proin at orci. Suspendisse nec orci nec elit convallis porttitor. Praesent sit amet turpis eu nisl
-											faucibus pharetra. Sed eu felis. Etiam eleifend nisl nec lectus. Ut suscipit pede eu diam. Aenean vitae quam. Cras felis. Sed utdw
-											nibh. Duis libero. Vivamus pharetra libero non facilisis imperdiet mi augue feugiat nisl.</p>
+										<p style="text-align: justify" th:text="${car.brand.history}"></p>
 									</div>
 								</div>
 								<div class="b-detail__main-info-extra wow zoomInUp" data-wow-delay="0.5s">
@@ -429,10 +229,10 @@
 									<h2 class="s-titleDet">Description</h2>
 									<div class="row">
 										<div class="col-xs-6">
-											<h4 class="b-detail__main-aside-desc-title">Make</h4>
+											<h4 class="b-detail__main-aside-desc-title">Brand</h4>
 										</div>
 										<div class="col-xs-6">
-											<p class="b-detail__main-aside-desc-value">Nissan</p>
+											<p class="b-detail__main-aside-desc-value" th:text="${car.brand.name}"></p>
 										</div>
 									</div>
 									<div class="row">
@@ -440,15 +240,15 @@
 											<h4 class="b-detail__main-aside-desc-title">Model</h4>
 										</div>
 										<div class="col-xs-6">
-											<p class="b-detail__main-aside-desc-value">Maxima</p>
+											<p class="b-detail__main-aside-desc-value" th:text="${car.model}"></p>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-xs-6">
-											<h4 class="b-detail__main-aside-desc-title">Kilometres</h4>
+											<h4 class="b-detail__main-aside-desc-title">Status</h4>
 										</div>
 										<div class="col-xs-6">
-											<p class="b-detail__main-aside-desc-value">39,000 km</p>
+											<p class="b-detail__main-aside-desc-value" th:text="${car.status.label}"></p>
 										</div>
 									</div>
 									<div class="row">
@@ -456,7 +256,7 @@
 											<h4 class="b-detail__main-aside-desc-title">Body Type</h4>
 										</div>
 										<div class="col-xs-6">
-											<p class="b-detail__main-aside-desc-value">Sedan</p>
+											<p class="b-detail__main-aside-desc-value" th:text="${car.bodyType.name()}"></p>
 										</div>
 									</div>
 									<div class="row">
@@ -472,7 +272,7 @@
 											<h4 class="b-detail__main-aside-desc-title">Engine</h4>
 										</div>
 										<div class="col-xs-6">
-											<p class="b-detail__main-aside-desc-value">V-6 cyl</p>
+											<p class="b-detail__main-aside-desc-value" th:text="${car.engine}"></p>
 										</div>
 									</div>
 									<div class="row">
@@ -480,7 +280,7 @@
 											<h4 class="b-detail__main-aside-desc-title">Drivetrain</h4>
 										</div>
 										<div class="col-xs-6">
-											<p class="b-detail__main-aside-desc-value">EWD</p>
+											<p class="b-detail__main-aside-desc-value" th:text="${car.driveTrain.name()}"></p>
 										</div>
 									</div>
 									<div class="row">
@@ -488,7 +288,7 @@
 											<h4 class="b-detail__main-aside-desc-title">Transmission</h4>
 										</div>
 										<div class="col-xs-6">
-											<p class="b-detail__main-aside-desc-value">Dual-Clutch Automatic</p>
+											<p class="b-detail__main-aside-desc-value" th:text="${car.transmission.label}"></p>
 										</div>
 									</div>
 									<div class="row">
@@ -496,31 +296,31 @@
 											<h4 class="b-detail__main-aside-desc-title">Exterior Color</h4>
 										</div>
 										<div class="col-xs-6">
-											<p class="b-detail__main-aside-desc-value">Dark Grey</p>
+											<p class="b-detail__main-aside-desc-value" th:text="${car.color.label}"></p>
 										</div>
 									</div>
-									<div class="row">
-										<div class="col-xs-6">
-											<h4 class="b-detail__main-aside-desc-title">Interior color</h4>
-										</div>
-										<div class="col-xs-6">
-											<p class="b-detail__main-aside-desc-value">Jet Black</p>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-xs-6">
-											<h4 class="b-detail__main-aside-desc-title">Passangers/Doors</h4>
-										</div>
-										<div class="col-xs-6">
-											<p class="b-detail__main-aside-desc-value">5 Passengers / 4 Doors</p>
-										</div>
-									</div>
+									<!--<div class="row">-->
+										<!--<div class="col-xs-6">-->
+											<!--<h4 class="b-detail__main-aside-desc-title">Interior color</h4>-->
+										<!--</div>-->
+										<!--<div class="col-xs-6">-->
+											<!--<p class="b-detail__main-aside-desc-value">Jet Black</p>-->
+										<!--</div>-->
+									<!--</div>-->
+									<!--<div class="row">-->
+										<!--<div class="col-xs-6">-->
+											<!--<h4 class="b-detail__main-aside-desc-title">Passangers/Doors</h4>-->
+										<!--</div>-->
+										<!--<div class="col-xs-6">-->
+											<!--<p class="b-detail__main-aside-desc-value">5 Passengers / 4 Doors</p>-->
+										<!--</div>-->
+									<!--</div>-->
 									<div class="row">
 										<div class="col-xs-6">
 											<h4 class="b-detail__main-aside-desc-title">Fuel Type</h4>
 										</div>
 										<div class="col-xs-6">
-											<p class="b-detail__main-aside-desc-value">Gasoline Fue</p>
+											<p class="b-detail__main-aside-desc-value" th:text="${car.fuelType.name()}"></p>
 										</div>
 									</div>
 									<div class="row">
@@ -892,7 +692,7 @@
 									<li><a href="about.html">About</a></li>
 									<li><a href="404.html">Services</a></li>
 									<li><a href="blog.html">Blog</a></li>
-									<li><a href="listTable.html">Shop</a></li>
+									<li><a href="carListByBrand.html">Shop</a></li>
 									<li><a href="contacts.html">Contact</a></li>
 								</ul>
 							</nav>

@@ -25,6 +25,8 @@ public class Brand {
     private int founded;
     @Column(name = "url_pic")
     private String picUrl;
+    @Column
+    private String history;
 
 
 }

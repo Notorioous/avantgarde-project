@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+</head>
+<body>
+<h3 style="color: #2b2b2b;">Welcome <span th:text="${user.firstname + ' ' + user.lastname}"></span></h3><br><br>
+
+<div>
+    <a href="/addCars">Add Cars and Brands</a> <br>
+    <a href="/addNews">Add News and Announcement</a> <br>
+
+</div>
+
+<a href="/logout">Log out</a>
+
+</body>
+</html>

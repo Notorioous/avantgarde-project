@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Cars and Brands</title>
+</head>
+<body>
+
+<h3 style="color: #2e458b">Add Cars :</h3>
+
+<form action="/addCar" method="post" enctype="multipart/form-data">
+
+    Brand :<br> <select name="brand">
+    <option th:each="brand : ${brands}" th:value="${brand.id}" th:text="${brand.name}"></option>
+</select><br>
+    <input type="text" name="model" placeholder="Model"><br>
+    <input type="number" name="year" placeholder="Year"><br>
+    Color :<br> <select name="color">
+    <option  th:each="color : ${colors}" th:value="${color}" th:text="${color}"></option>
+</select><br>
+    <input type="text" name="price" placeholder="Price"><br>
+    <input type="text" name="engine" placeholder="Engine"><br>
+    Body Type :<br> <select name="bodyType">
+    <option th:each="bodyType : ${bodyTypes}" th:value="${bodyType}" th:text="${bodyType}"></option>
+</select><br>
+    Drive train :<br> <select name="driveTrain">
+    <option value="FR">FR</option>
+    <option value="RR">RR</option>
+    <option value="FWD">FWD</option>
+</select><br>
+    Transmission :<br> <select name="transmission">
+    <option value="MANUAL">MANUAL</option>
+    <option value="AUTOMATIC">AUTOMATIC</option>
+    <option value="SEMI_AUTOMATIC">SEMI AUTOMATIC</option>
+    <option value="CONTINUOUSLY">CONTINUOUSLY</option>
+</select><br>
+    Fuel Type :<br> <select name="fuelType">
+    <option value="PETROL">PETROL</option>
+    <option value="DIESEL">DIESEL</option>
+    <option value="GAS">GAS</option>
+</select><br>
+    <input type="text" name="kilometres" placeholder="Kilometres"><br>
+    <input type="text" name="HP" placeholder="Horse Power"><br>
+    <select name="Status">
+        <option value="BRAND_NEW">NEW</option>
+        <option value="USED">USED</option>
+    </select><br><br>
+    Add Main Photo:<br>
+    <input type="file" name="picture">
+    <input type="submit" value="Add Photo"><br><br>
+
+    <input type="file" name="carImages" multiple accept="image/*,image/jpeg">
+    <input type="submit" value="Add Photo"><br><br>
+
+    <input type="submit" value="Add Car">
+
+
+</form>
+
+
+<h3 style="color: #2e458b">Add Brands :</h3>
+<form action="/addBrand" method="post" enctype="multipart/form-data">
+
+    <input type="text" name="name" placeholder="Brand"><br>
+    <input type="text" name="founded" placeholder="Founded"><br>
+    <input type="file" name="picture" placeholder="Brand logo"><br><br>
+    <input type="submit" value="Add">
+
+</form>
+</body>
+</html>

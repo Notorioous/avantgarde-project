@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Add News And Announcements</title>
 </head>
 <body>
 
+<div>
+    <h3 style="color: #ac2925">Add News :</h3>
+
+    <form action="/addNews" method="post" enctype="multipart/form-data">
+
+    <input type="text" name="title" placeholder="Title"><br>
+    <input type="text" name="shortText" placeholder="Short Text"><br>
+    <textarea name="text" placeholder="Text"></textarea><br>
+        <select name="brand">
+            <option th:each="brand : ${brands}" th:value="${brand.id}" th:text="${brand.name}"></option>
+        </select><br>
+        <select name="car">
+            <option th:each="car : ${cars}" th:value="${car.id}" th:text="${car.model}"></option>
+        </select>
+    <input type="file" name="picture"><br><br>
+        <input type="submit" value="Add Photo"><br><br>
+
+        <input type="file" name="newsImages" multiple accept="image/*,image/jpeg"><br>
+        <input type="submit" value="Add Photos"><br><br>
+    <input type="submit" value="Add">
+    </form>
+
+</div>
+
+
+<div>
 <h3 style="color: #ac2925">Add Announcement :</h3>
 
 <form action="/addAnnouncement" method="post" enctype="multipart/form-data">
@@ -17,6 +43,8 @@
     <input type="submit" value="Add">
 
 </form>
+
+</div>
 
 </body>
 </html>

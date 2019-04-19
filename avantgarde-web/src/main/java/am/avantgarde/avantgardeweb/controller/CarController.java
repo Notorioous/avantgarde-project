@@ -1,6 +1,7 @@
 package am.avantgarde.avantgardeweb.controller;
 
 import am.avantgarde.avantgardecommon.model.*;
+import am.avantgarde.avantgardecommon.model.Color;
 import am.avantgarde.avantgardecommon.repository.*;
 import am.avantgarde.avantgardeweb.security.SpringUser;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
@@ -22,13 +23,13 @@ import java.util.List;
 public class CarController {
 
 
-    @Value("C:\\Users\\edona\\IdeaProjects\\avantgarde\\src\\main\\resources\\static\\media\\620x485")
+    @Value("C:\\Users\\edona\\IdeaProjects\\qwe\\avantgarde\\src\\main\\resources\\static\\media\\620x485")
     private String bigPicDir;
 
-    @Value("C:\\Users\\edona\\IdeaProjects\\avantgarde\\src\\main\\resources\\static\\media\\115x85")
+    @Value("C:\\Users\\edona\\IdeaProjects\\qwe\\avantgarde\\src\\main\\resources\\static\\media\\115x85")
     private String smallPicDir;
 
-    @Value("C:\\Users\\edona\\IdeaProjects\\avantgarde\\src\\main\\resources\\static\\media\\270x230")
+    @Value("C:\\Users\\edona\\IdeaProjects\\qwe\\avantgarde\\src\\main\\resources\\static\\media\\270x230")
     private String mainPicDir;
 
     @Autowired

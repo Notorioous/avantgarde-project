@@ -481,7 +481,7 @@ select.m-select + span.fa{
 }
 
 .b-items__pagination-main > a.m-left{
-    margin-right: 15px;
+    margin-right: -3px;
 }
 
 .b-items__pagination-main > a.m-right{
